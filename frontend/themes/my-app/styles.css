@@ -1,1 +1,8 @@
 @import url('./views/login-view.css');
+
+.offer-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px 0;
+}

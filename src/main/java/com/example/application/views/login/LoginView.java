@@ -1,5 +1,6 @@
 package com.example.application.views.login;
 
+import com.example.application.views.registration.RegistrationView;
 import com.vaadin.flow.component.Composite;
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.button.ButtonVariant;
@@ -48,6 +49,10 @@ public class LoginView extends Composite<VerticalLayout> {
         buttonPrimary.setText("Registrieren");
         buttonPrimary.setWidth("min-content");
         buttonPrimary.addThemeVariants(ButtonVariant.LUMO_PRIMARY);
+        buttonPrimary.addClickListener(event -> getUI().ifPresent(ui -> ui.navigate(RegistrationView.class)));
+
+        buttonPrimary.setWidth("min-content");
+        buttonPrimary.addThemeVariants(ButtonVariant.LUMO_PRIMARY);
         layoutColumn2.setWidth("100%");
         layoutColumn2.getStyle().set("flex-grow", "1");
         h1.setText("Find a Supervisor");
@@ -72,10 +77,10 @@ public class LoginView extends Composite<VerticalLayout> {
         layoutRow2.setHeight("min-content");
         routerLink.setText("Datenschutz");
         routerLink.setRoute(LoginView.class);
-        routerLink.setWidth("min-content");
+        //routerLink.setWidth("min-content");
         routerLink2.setText("Impressum");
         routerLink2.setRoute(LoginView.class);
-        routerLink2.setWidth("min-content");
+       // routerLink2.setWidth("min-content");
         getContent().add(layoutRow);
         layoutRow.add(buttonPrimary);
         getContent().add(layoutColumn2);
@@ -87,5 +92,6 @@ public class LoginView extends Composite<VerticalLayout> {
         getContent().add(layoutRow2);
         layoutRow2.add(routerLink);
         layoutRow2.add(routerLink2);
+
     }
 }
