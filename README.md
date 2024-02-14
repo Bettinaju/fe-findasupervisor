@@ -1,6 +1,6 @@
 # findasupvervisor
 
-This is a small frontend project with Vaadin, where students are shown a list of supervisors. The original idea was to have an application where students could search for second supervisors for their bachelor thesis. I used this project to familiarize myself with the basic functionalities of Vaadin and learn how to use them. In the future, the connection to the backend could be established, which is already fully implemented in the XXX repository.
+This is a small frontend project with Vaadin, where students are shown a list of supervisors. The original idea was to have an application where students could search for second supervisors for their bachelor thesis. I used this project to familiarize myself with the basic functionalities of Vaadin and learn how to use them. In the future, the connection to the backend could be established, which is already fully implemented in the [be-bamate](https://github.com/Bettinaju/be-bamate) repository.
 
 ## Running the application
 
